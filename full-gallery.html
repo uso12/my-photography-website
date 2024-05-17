@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Richard's Travel Photography</title>
+    <title>Full Travel Photography Gallery</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -96,38 +96,20 @@
             border-radius: 20px; /* Adjust border-radius to maintain rounded corners */
             height: 30px; /* Adjust height to make the button thinner */
         }
-        .show-more-button {
-            margin: 20px;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Richard's Travel Photography</h1>
+        <h1>Full Travel Photography Gallery</h1>
     </header>
     <nav>
-        <a href="#gallery">Gallery</a>
-        <a href="#about">About Me</a>
-        <a href="#contact">Contact</a>
+        <a href="index.html">Home</a>
     </nav>
     <section id="gallery">
-        <h2>Travel Photography Gallery</h2>
+        <h2>All Photos</h2>
         <div class="gallery" id="gallery-container">
             <!-- Images will be dynamically inserted here -->
         </div>
-        <button class="show-more-button" onclick="location.href='full-gallery.html'">Show More</button>
-    </section>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I'm Richard, a passionate travel photographer who loves capturing the beauty of the world. My journeys have taken me to breathtaking places, and through my lens, I strive to share the awe-inspiring moments I experience. Join me on my adventures as I explore the wonders of our planet, one photo at a time.</p>
-    </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>If you would like to get in touch with me, please email me at <a href="mailto:yang@gmail.com">yang@gmail.com</a>.</p>
-        <button onclick="window.location.href='mailto:yang@gmail.com'">Email Contact</button>
     </section>
     <footer>
         <p>&copy; 2024 Richard's Travel Photography. All rights reserved.</p>
@@ -146,8 +128,18 @@
             const imageList = [
                 'IMG_0097.jpg', 'IMG_0209.jpg', 'IMG_0232.jpg', 'IMG_0280.jpg',
                 'IMG_0465.jpg', 'IMG_0514.jpg', 'IMG_0685.jpg', 'IMG_0745.jpg',
-                'IMG_1545.jpg', 'IMG_1565.jpg'
-            ]; // Only the first 10 images for the small gallery
+                'IMG_1545.jpg', 'IMG_1565.jpg', 'IMG_1602.jpg', 'IMG_1786.jpg',
+                'IMG_1807.jpg', 'IMG_1808.jpg', 'IMG_1810.jpg', 'IMG_1825.jpg',
+                'IMG_1855.jpg', 'IMG_1856.jpg', 'IMG_1891.jpg', 'IMG_1895.jpg',
+                'IMG_1913.jpg', 'IMG_1919.jpg', 'IMG_1993.jpg', 'IMG_2016.jpg',
+                'IMG_2036.jpg', 'IMG_2156.jpg', 'IMG_2331.jpg', 'IMG_2561.jpg',
+                'IMG_2583.jpg', 'IMG_2599.jpg', 'IMG_2604.jpg', 'IMG_2618.jpg',
+                'IMG_2641.jpg', 'IMG_2723.jpg', 'IMG_2843.jpg', 'IMG_2943.jpg',
+                'IMG_2991.jpg', 'IMG_3067.jpg', 'IMG_3135.jpg', 'IMG_3146.jpg',
+                'IMG_3161.jpg', 'IMG_3185.jpg', 'IMG_3278.jpg', 'IMG_3272.jpg',
+                'IMG_3299.jpg', 'IMG_3304.jpg', 'IMG_3313.jpg', 'IMG_3354.jpg',
+                'IMG_3356.jpg'
+            ];
 
             imageList.forEach(image => {
                 const img = document.createElement('img');
