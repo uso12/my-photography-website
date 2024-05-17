@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Richard's Travel Photography</title>
+    <link rel="stylesheet" href="styles.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -131,8 +132,10 @@
         <img id="full-size-image" src="" alt="Full Size">
     </div>
 
+    <script src="scripts.min.js"></script>
     <script>
-        // Function to dynamically load images from a predefined list
+        document.addEventListener('DOMContentLoaded', loadImages);
+
         function loadImages() {
             const galleryContainer = document.getElementById('gallery-container');
             const photoPath = 'photos/';
@@ -156,6 +159,7 @@
                 const img = document.createElement('img');
                 img.src = photoPath + image;
                 img.alt = 'Travel Photo';
+                img.loading = 'lazy';
                 img.onclick = () => showFullSize(photoPath + image);
                 img.onload = () => {
                     const aspectRatio = img.naturalWidth / img.naturalHeight;
@@ -185,8 +189,6 @@
             const overlay = document.getElementById('full-size-overlay');
             overlay.style.display = 'none';
         }
-
-        document.addEventListener('DOMContentLoaded', loadImages);
     </script>
 </body>
 </html>
